@@ -1,0 +1,17 @@
+@import '../../styles/settings.scss';
+
+.blog-post-card {
+  color: var(--text-gray);
+
+  h2 {
+    margin-top: -0.4rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--accent);
+  }
+
+  > p {
+    margin-top: 0.2rem;
+    font-size: 1.4rem;
+  }
+}

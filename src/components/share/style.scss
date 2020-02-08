@@ -1,0 +1,17 @@
+@import '../../styles/settings.scss';
+
+.share {
+  display: inline-flex;
+  cursor: pointer;
+  outline: none;
+  align-items: center;
+  color: var(--accent);
+  background: var(--background-lighter);
+  border-radius: 4px;
+  padding: 0.5rem;
+
+  > svg {
+    margin-right: 0.5rem;
+    fill: currentColor;
+  }
+}

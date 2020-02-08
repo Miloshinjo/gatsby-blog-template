@@ -1,0 +1,16 @@
+.header-nav {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+
+  > a:last-child {
+    margin-left: 0.5rem;
+    font-style: italic;
+  }
+
+  .link-active {
+    span {
+      color: var(--accent);
+    }
+  }
+}

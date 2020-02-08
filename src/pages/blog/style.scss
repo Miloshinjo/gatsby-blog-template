@@ -1,0 +1,23 @@
+@import '../../styles/shared.scss';
+@import '../../styles/settings.scss';
+
+.blog {
+  @extend .page;
+
+  @include mobile {
+    padding-bottom: 2.4rem;
+  }
+
+  > h1 {
+    font-family: $fontSecondary;
+    font-size: 1.8rem;
+    font-weight: 500;
+    span {
+      color: var(--accent);
+    }
+  }
+
+  > div:not(:first-child) {
+    margin-top: 2.4rem;
+  }
+}

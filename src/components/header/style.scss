@@ -1,0 +1,24 @@
+@import '../../styles/settings.scss';
+@import '../../styles/shared.scss';
+@import '../../styles/mixins.scss';
+
+.header {
+  @extend .page;
+  padding-top: 2.4rem;
+  padding-bottom: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    > span {
+      color: var(--accent);
+    }
+  }
+
+  .theme-toggle {
+    align-self: flex-start;
+  }
+}

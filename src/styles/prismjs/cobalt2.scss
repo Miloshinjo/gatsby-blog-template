@@ -1,0 +1,177 @@
+/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript&plugins=show-language+highlight-keywords */
+/**
+ * Cobalt2 theme for JavaScript, CSS, HTML, Markdown, JSON, YAML, and SCSS
+ * @author wesbos
+ * Works best when "Show Language" and "Highlight Keywords" plugins are included
+ */
+
+.cobalt2 {
+  code[class*='language-'],
+  pre[class*='language-'] {
+    font-family: 'Roboto Mono', 'Inconsolata', Consolas, Monaco, 'Andale Mono',
+      'Ubuntu Mono', monospace;
+    line-height: 1.375;
+    font-size: 13.6px;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    background-color: #1b2b34;
+    color: #c0c5ce;
+    font-weight: 600;
+
+    @include desktop {
+      border-radius: 5px;
+    }
+  }
+
+  pre[class*='language-'] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  pre[class*='language-']::-moz-selection,
+  pre[class*='language-'] ::-moz-selection,
+  code[class*='language-']::-moz-selection,
+  code[class*='language-'] ::-moz-selection {
+    text-shadow: none;
+    background: #a7adba;
+  }
+
+  pre[class*='language-']::selection,
+  pre[class*='language-'] ::selection,
+  code[class*='language-']::selection,
+  code[class*='language-'] ::selection {
+    text-shadow: none;
+    background: #a7adba;
+  }
+
+  :not(pre) > code[class*='language-'] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    font-weight: 400;
+    color: #65737e;
+  }
+
+  .token.namespace {
+    opacity: 0.7;
+  }
+
+  .token.operator,
+  .token.boolean,
+  .token.number {
+    color: #f99157;
+  }
+
+  .token.property {
+    color: #fac863;
+  }
+
+  .token.tag {
+    color: #69c;
+  }
+
+  .token.symbol,
+  .token.string {
+    color: #99c794;
+  }
+
+  .token.selector {
+    color: #c594c5;
+  }
+
+  .token.attr-name {
+    color: #f99157;
+  }
+
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string {
+    color: #5fb3b3;
+  }
+
+  .token.attr-value,
+  .token.keyword,
+  .token.control,
+  .token.directive,
+  .token.unit {
+    color: #b294bb;
+  }
+
+  .token.statement,
+  .token.regex,
+  .token.atrule {
+    color: #5fb3b3;
+  }
+
+  .token.placeholder,
+  .token.variable {
+    color: #69c;
+  }
+
+  .token.punctuation,
+  .token.operator {
+    color: #5fb3b3;
+  }
+
+  .token.deleted {
+    text-decoration: line-through;
+  }
+
+  .token.inserted {
+    border-bottom: 1px dotted #fff;
+    text-decoration: none;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.constant,
+  .token.class-name {
+    color: #f99157;
+  }
+
+  .token.important {
+    color: #c66;
+  }
+
+  .token.entity {
+    cursor: help;
+  }
+
+  .token.function {
+    color: #69c;
+  }
+
+  pre > code.highlight {
+    outline: 0.4em solid #c66;
+    outline-offset: 0.4em;
+  }
+
+  .gatsby-highlight-code-line {
+    display: block;
+    background-color: rgb(51, 66, 76);
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../../styles/settings.scss';
+
+.link-button-main {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-weight: 500;
+  padding: 1rem 2rem;
+  position: relative;
+  transition: color 0.5s;
+  display: inline-block;
+  border-radius: 4px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    background: var(--background-lighter);
+    box-shadow: inset 0px 0px 0px var(--accent);
+    display: block;
+    -webkit-transition: all 0.5s cubic-bezier(0.5, 0.24, 0, 1);
+    transition: all 0.5s cubic-bezier(0.5, 0.24, 0, 1);
+  }
+
+  &:hover {
+    color: var(--background);
+  }
+
+  &:hover::before {
+    box-shadow: inset 350px 0px 0px var(--accent);
+  }
+}

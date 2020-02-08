@@ -1,0 +1,115 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/settings.scss';
+
+.project-card {
+  display: inline-flex;
+
+  max-width: 100%;
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 500;
+
+  > div:first-child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    margin-right: 2rem;
+
+    > h2 {
+      margin-top: -0.4rem;
+      font-weight: 600;
+      font-size: 2.4rem;
+      color: var(--accent);
+    }
+
+    > small {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      > span {
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+        background-color: var(--background-lighter);
+        color: var(--text);
+        padding: 0.2rem 0.4rem;
+        font-weight: 600;
+        border-radius: 4px;
+      }
+
+      .project-card__tech {
+        background-color: var(--background-lighter);
+        color: var(--accent);
+      }
+    }
+  }
+
+  > div:last-child {
+    max-width: 30rem;
+    width: 100%;
+  }
+
+  .project-card__description {
+    font-size: 1.4rem;
+    color: var(--text-gray);
+    margin-top: 0.5rem;
+  }
+
+  .project-card__link {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-top: auto;
+    align-self: flex-start;
+    transition: background-color 0.1s;
+    background-color: var(--background-lighter);
+    color: var(--text);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+
+    > svg {
+      fill: currentColor;
+      height: 1.7rem;
+      width: 1.7rem;
+      font-size: 1.4rem;
+      margin-left: 0.2rem;
+    }
+  }
+
+  .project-card__image {
+    transition: all 0.2s;
+
+    .gatsby-image-wrapper {
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  @include mobile {
+    max-width: 100%;
+    flex-direction: column-reverse;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--background-lighter);
+    }
+    padding-bottom: 2rem;
+
+    > div:first-child {
+      margin-right: 0;
+    }
+
+    > div:last-child {
+      max-width: 80rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-card__link {
+      margin-top: 4rem;
+      font-size: 1.6rem;
+    }
+  }
+}
